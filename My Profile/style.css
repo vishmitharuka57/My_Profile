@@ -660,6 +660,8 @@ b{
 
 #contact{
     position: absolute;
+    right:5vw;
+    left: 5vw;
     top: 590%;
     display: flex;
     justify-content: center;
@@ -685,7 +687,7 @@ b{
 
 .contact .content p{
     position: relative;
-    left: 10vw;
+    right: 25vw;
     font-weight: 300;
     color: black;
 }
@@ -713,7 +715,7 @@ b{
 .container .contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
-    background: plum;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -738,12 +740,12 @@ b{
 .contactForm{
     width: 40%;
     padding: 40px;
-    background: purple;
+    /*background: purple;*/
 }
 
 .contactForm h2{
     font-size: 30px;
-    color: white;
+    color: #330033;
     font-weight: 500;
 }
 
@@ -751,6 +753,7 @@ b{
     position: relative;
     width: 100%;
     margin-top: 10px;
+    /*color: purple;*/
 }
 
 .contactForm .inputBox input,
@@ -786,7 +789,7 @@ b{
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background:darkseagreen;
+    background: plum;
     color: #1e2125;
     border: none;
     cursor: pointer;
@@ -810,6 +813,18 @@ b{
     }
 }
 
+footer{
+    position: absolute;
+    right:5vw;
+    left: 5vw;
+    top: 700%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -904,3 +919,47 @@ b{
     }
 }
 
+footer .bottom-details {
+    width: 100%;
+    background: #2c303a;
+    background-image: url("https://images.unsplash.com/photo-1632059368252-be6d65abc4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+}
+
+footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+.bottom-details .bottom_text a {
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    footer .content .link-boxes {
+        flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
